@@ -1,0 +1,29 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liztrenholme/friend-finder.git"
+  },
+  "keywords": [
+    "friend",
+    "finder"
+  ],
+  "author": "Liz T",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liztrenholme/friend-finder/issues"
+  },
+  "homepage": "https://github.com/liztrenholme/friend-finder#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "path": "^0.12.7"
+  }
+}
