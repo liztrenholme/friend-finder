@@ -9,18 +9,18 @@ module.exports = function () {
     return res.json(friends);
   });
 
-  router.post('/api/tables', function (req, res) {
+  router.post('/api/friends', function (req, res) {
 
-    friends.push(req.body);
+//    friends.push(req.body);
 
     return res.json(false);
   });
 
-  router.post('/api/clear', function (req, res) {
-    friends = [];
+  // router.post('/api/clear', function (req, res) {
+  //   friends = [];
 
-    res.json(true);
-  });
+  //   res.json(true);
+  // });
 
   return router;
 };
