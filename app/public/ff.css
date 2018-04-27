@@ -1,7 +1,91 @@
-h1, h2 {
+
+.main {
+	background-image: url("images/friends.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 90px;
+	text-align: center;
+	height: 40em;
+}
+
+.survey {
+	background-image: url("images/shots.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	margin: 90px;
+	text-align: center;
+}
+
+ .questions {
+	width: 20%;
+	padding-bottom: -40px;
+}
+
+.form-box {
+	text-align: right;
+	background-color: #fff;
+	opacity: .8;
+	width: 80%;
+}
+
+.form-group {
+	width: 90%;
+}
+
+.navbar-brand {
 	font-family: 'Black Han Sans', sans-serif;
 }
 
-p {
+.nav-link {
 	font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h4 {
+	font-family: 'Black Han Sans', sans-serif;
+	background-color: #fcfdf9;
+	opacity: .8;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-family: 'Raleway', sans-serif;
+	margin: 30px;
+}
+
+label {
+	font-family: 'Raleway', sans-serif;
+	font-size: 100%;
+	font-weight: bold;
+	margin: 0 0 20px 0;
+	background-color: #fff;
+}
+
+input {
+	margin: 0 0 10px 0;
+	width: 60%;
+}
+
+select {
+	width: 20%;
+	text-align: center;
+	margin: 0 5px 0 25px;
+}
+
+.btn-survey {
+	margin: 145px;
+	background-color: #fff;
+	opacity: .7;
+}
+
+.btn-submit {
+	font-family: 'Black Han Sans', sans-serif;
+	font-weight: bolder;
+	color: black;
+	background-color: #fff;
+	text-align: left;
+	opacity: .7;
+	padding: 20px;
+	margin-bottom: 10px;
 }

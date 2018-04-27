@@ -6,29 +6,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Raleway" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="ff.css">
+    <link rel="stylesheet" type="text/css" href="./ff.css">
     <title>Friend Finder</title>
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="container">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Friend Finder</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/liztrenholme/friend-finder">About</a>
+                    </li>
+                </ul>
+                </form>
+            </div>
+        </nav>
+        <div class="container survey">
             <div class="row">
                 <div class="col-sm-12">
-                    Friend Finder
+                    <h1>Friend Finder</h1>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12">
-                    <h2>Take the survey and meet your new BFF!</h2>
+                <div class="col-sm-1">
+                </div>
+                <div class="col-sm-6">
+                    <h2>About You</h2>
+                    <form>
+                        <div class="form-box">
+                        <input class="form-control" type="text" placeholder="Name (Required)">
+                    </div>
+                    <div class="form-box">
+                        <input class="form-control" type="text" placeholder="Link to Photo Image (Required)">
+                    </div>
+                        <div class="form-box">
+                            <h4 class="questions">Question 1</h4>
+                            <div class="form-group">
+                                <label for="q1">Your mind is always buzzing with unexplored ideas and plans.</label>
+                                <select class="form-control" id="q1">
+                                    <option>1 (strongly disagree)</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5 (strongly agree)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-box">
+                            <h4 class="questions">Question 2</h4>
+                            <div class="form-group">
+                                <label for="q2">Generally speaking, you rely more on your experience than your imagination.</label>
+                                <select class="form-control" id="q2">
+                                    <option>1 (strongly disagree)</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5 (strongly agree)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-box">
+                            <h4 class="questions">Question 3</h4>
+                            <div class="form-group">
+                                <label for="q3">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+                                <select class="form-control" id="q3">
+                                    <option>1 (strongly disagree)</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5 (strongly agree)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-box">
+                            <h4 class="questions">Question 4</h4>
+                            <div class="form-group">
+                                <label for="q4">You rarely do something just out of sheer curiosity.</label>
+                                <select class="form-control" id="q4">
+                                    <option>1 (strongly disagree)</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5 (strongly agree)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-box">
+                            <h4 class="questions">Question 5</h4>
+                            <div class="form-group">
+                                <label for="q5">People can rarely upset you.</label>
+                                <select class="form-control" id="q5">
+                                    <option>1 (strongly disagree)</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5 (strongly agree)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-box">
+                            <h4 class="questions">Question 6</h4>
+                            <div class="form-group">
+                                <label for="q6">It is often difficult for you to relate to other people’s feelings.</label>
+                                <select class="form-control" id="q6">
+                                    <option>1 (strongly disagree)</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5 (strongly agree)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-box">
+                            <h4 class="questions">Question 7</h4>
+                            <div class="form-group">
+                                <label for="q7">In a discussion, truth should be more important than people’s sensitivities.</label>
+                                <select class="form-control" id="q7">
+                                    <option>1 (strongly disagree)</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5 (strongly agree)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-box">
+                            <h4 class="questions">Question 8</h4>
+                            <div class="form-group">
+                                <label for="q8">You rarely get carried away by fantasies and ideas.</label>
+                                <select class="form-control" id="q8">
+                                    <option>1 (strongly disagree)</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5 (strongly agree)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-box">
+                            <h4 class="questions">Question 9</h4>
+                            <div class="form-group">
+                                <label for="q9">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
+                                <select class="form-control" id="q9">
+                                    <option>1 (strongly disagree)</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5 (strongly agree)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-box">
+                            <h4 class="questions">Question 10</h4>
+                            <div class="form-group">
+                                <label for="q10">You feel more energetic after spending time with a group of people.</label>
+                                <select class="form-control" id="q10">
+                                    <option>1 (strongly disagree)</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5 (strongly agree)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-secondary btn-submit btn-lg">Submit</button>
+                    </form>
+                </div>
+                <div class="col-sm-5">
                 </div>
             </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-<script src="../data/friends/.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="../data/friends/.js"></script>
 </body>
 
 </html>
