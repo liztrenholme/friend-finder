@@ -6,27 +6,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Raleway" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./ff.css">
+    <!--<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/liztrenholme/friend-finder/master/app/public/ff.css">-->
+    <style>
+    .main {
+        background-image: url("https://raw.githubusercontent.com/liztrenholme/friend-finder/master/app/public/images/friends.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 90px;
+        text-align: center;
+        height: 40em;
+    }
+
+    .survey {
+        background-image: url("https://raw.githubusercontent.com/liztrenholme/friend-finder/master/app/public/images/shots.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        margin: 90px;
+        text-align: center;
+    }
+
+    .questions {
+        width: 20%;
+        padding-bottom: -40px;
+    }
+
+    .form-box {
+        text-align: right;
+        background-color: #fff;
+        opacity: .8;
+        width: 80%;
+    }
+
+    .form-group {
+        width: 90%;
+    }
+
+    .navbar-brand {
+        font-family: 'Black Han Sans', sans-serif;
+    }
+
+    .nav-link {
+        font-family: 'Raleway', sans-serif;
+    }
+
+    h1,
+    h2,
+    h4 {
+        font-family: 'Black Han Sans', sans-serif;
+        background-color: #fcfdf9;
+        opacity: .8;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-family: 'Raleway', sans-serif;
+        margin: 30px;
+    }
+
+    label {
+        font-family: 'Raleway', sans-serif;
+        font-size: 100%;
+        font-weight: bold;
+        margin: 0 0 20px 0;
+        background-color: #fff;
+    }
+
+    input {
+        margin: 0 0 10px 0;
+        width: 60%;
+    }
+
+    select {
+        width: 20%;
+        text-align: center;
+        margin: 0 5px 0 25px;
+    }
+
+    .btn-survey {
+        margin: 145px;
+        background-color: #fff;
+        opacity: .7;
+    }
+
+    .btn-submit {
+        font-family: 'Black Han Sans', sans-serif;
+        font-weight: bolder;
+        color: black;
+        background-color: #fff;
+        text-align: left;
+        opacity: .7;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    </style>
     <title>Friend Finder</title>
 </head>
 
 <body>
     <div class="container-fluid">
-    	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Friend Finder</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="https://github.com/liztrenholme/friend-finder">About</a>
-      </li>
-    </ul>
-    </form>
-  </div>
-</nav>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Friend Finder</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/liztrenholme/friend-finder">About</a>
+                    </li>
+                </ul>
+                </form>
+            </div>
+        </nav>
         <div class="container main">
             <div class="row">
                 <div class="col-sm-12">
@@ -36,13 +129,16 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="col-sm-12">
-                    <a href="/survey"><button type="button" class="btn btn-lg btn-survey btn-outline-dark"><h3>Take the survey and meet your new BFF!</h3></button></a>
-                </div>
+                        <a href="/survey">
+                            <button type="button" class="btn btn-lg btn-survey btn-outline-dark">
+                                <h3>Take the survey and meet your new BFF!</h3></button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </body>

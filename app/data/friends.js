@@ -1,4 +1,4 @@
-// logic for matching up new friends and storing data
+
 
 var friends = [{
   "name" : "Ahmed",
@@ -30,7 +30,22 @@ var friends = [{
       4,
       2,
       3,
+      4
+    ]
+},
+{
+  "name" : "Paul",
+  "photo" : "#",
+  "scores" : [
       4,
+      5,
+      2,
+      2,
+      2,
+      3,
+      5,
+      5,
+      1
     ]
 }];
 
