@@ -327,7 +327,7 @@
         };
         var valid = validate(input);
         var currentURL = window.location.origin;
-        if (valid) {
+        if (valid) { // puts friend match data into modal and displays it
             $.post(currentURL + "/api/friends", input).done(function(data) {
                 $("#modalTitle").text(data.name);
                 $("#modalImg").attr("src", data.photo);
@@ -338,7 +338,7 @@
             alert("You forgot something!");
         }
     });
-
+    // makes sure fields have been answered
     function validate(input) {
         var valid = false;
         if (input.name === "") {
