@@ -9,6 +9,10 @@ module.exports = function () {
     return res.sendFile(path.join(__dirname, '../public/survey.html'));
   });
 
+  router.get('/', function(req, res) {
+  	return res.sendFile(path.join(__dirname, '../public/index.html'));
+  });
+
 //displays homepage if anything other than "/survey" is entered into address bar
   router.get('*', function (req, res) {
     return res.sendFile(path.join(__dirname, "../public/index.html"));
