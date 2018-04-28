@@ -8,10 +8,6 @@ module.exports = function () {
     return res.sendFile(path.join(__dirname, '../public/survey.html'));
   });
 
-  // router.get('/reserve', function (req, res) {
-  //   return res.sendFile(path.join(__dirname, "../public/reserve.html"));
-  // });
-
   router.get('*', function (req, res) {
     return res.sendFile(path.join(__dirname, "../public/home.html"));
   });

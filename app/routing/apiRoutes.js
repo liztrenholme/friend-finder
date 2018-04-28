@@ -11,16 +11,11 @@ module.exports = function () {
 
   router.post('/api/friends', function (req, res) {
 
-//    friends.push(req.body);
-
-    return res.json(false);
+   friends.push(req.body);
+   res.json(req.body);
+    return res.json(true);
+    console.log(req.body);
   });
-
-  // router.post('/api/clear', function (req, res) {
-  //   friends = [];
-
-  //   res.json(true);
-  // });
 
   return router;
 };
