@@ -9,96 +9,102 @@
     <!--<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/liztrenholme/friend-finder/master/app/public/ff.css">-->
     <style>
     .main {
-    background-image: url("https://raw.githubusercontent.com/liztrenholme/friend-finder/master/app/public/images/friends.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 90px;
-    text-align: center;
-    height: 40em;
-}
+        background-image: url("https://raw.githubusercontent.com/liztrenholme/friend-finder/master/app/public/images/friends.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 90px;
+        text-align: center;
+        height: 40em;
+    }
 
-.survey {
-    background-image: url("https://raw.githubusercontent.com/liztrenholme/friend-finder/master/app/public/images/shots.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    margin: 90px;
-    text-align: center;
-}
+    .survey {
+        background-image: url("https://raw.githubusercontent.com/liztrenholme/friend-finder/master/app/public/images/shots.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        margin: 90px;
+        text-align: center;
+    }
 
- .questions {
-    width: 20%;
-    padding-bottom: -40px;
-}
+    .questions {
+        width: 20%;
+        padding-bottom: -40px;
+    }
 
-.form-box {
-    text-align: right;
-    background-color: #fff;
-    opacity: .8;
-    width: 80%;
-}
+    .form-box {
+        text-align: right;
+        background-color: #fff;
+        opacity: .8;
+        width: 80%;
+    }
 
-.form-group {
-    width: 90%;
-}
+    .form-group {
+        width: 90%;
+    }
 
-.navbar-brand {
-    font-family: 'Black Han Sans', sans-serif;
-}
+    .navbar-brand {
+        font-family: 'Black Han Sans', sans-serif;
+    }
 
-.nav-link {
-    font-family: 'Raleway', sans-serif;
-}
+    .nav-link,
+    p {
+        font-family: 'Raleway', sans-serif;
+        background-color: #fcfdf9;
+        opacity: .8;
+        font-size: 110%;
+    }
 
-h1, h2, h4 {
-    font-family: 'Black Han Sans', sans-serif;
-    background-color: #fcfdf9;
-    opacity: .8;
-    padding: 20px;
-    margin-bottom: 20px;
-}
+    h1,
+    h2,
+    h4 {
+        font-family: 'Black Han Sans', sans-serif;
+        background-color: #fcfdf9;
+        opacity: .8;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
 
-h3 {
-    font-family: 'Raleway', sans-serif;
-    margin: 30px;
-}
+    h3 {
+        font-family: 'Raleway', sans-serif;
+        margin: 30px;
+    }
 
-label {
-    font-family: 'Raleway', sans-serif;
-    font-size: 100%;
-    font-weight: bold;
-    margin: 0 0 20px 0;
-    background-color: #fff;
-}
+    label {
+        font-family: 'Raleway', sans-serif;
+        font-size: 100%;
+        font-weight: bold;
+        margin: 0 0 20px 0;
+        background-color: #fff;
+    }
 
-input {
-    margin: 0 0 10px 0;
-    width: 60%;
-}
+    input {
+        margin: 0 0 10px 0;
+        width: 60%;
+    }
 
-select {
-    width: 20%;
-    text-align: center;
-    margin: 0 5px 0 25px;
-}
+    select {
+        width: 20%;
+        text-align: center;
+        margin: 0 5px 0 25px;
+    }
 
-.btn-survey {
-    margin: 145px;
-    background-color: #fff;
-    opacity: .7;
-}
+    .btn-survey {
+        margin: 145px;
+        background-color: #fff;
+        opacity: .7;
+    }
 
-.btn-submit {
-    font-family: 'Black Han Sans', sans-serif;
-    font-weight: bolder;
-    color: black;
-    background-color: #fff;
-    text-align: left;
-    opacity: .7;
-    padding: 20px;
-    margin-bottom: 10px;
-}
-</style>
+    .btn-submit {
+        font-family: 'Black Han Sans', sans-serif;
+        font-weight: bolder;
+        color: black;
+        background-color: #fff;
+        text-align: left;
+        opacity: .7;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    </style>
     <title>Friend Finder</title>
 </head>
 
@@ -132,23 +138,24 @@ select {
                 </div>
                 <div class="col-sm-6">
                     <h2>About You</h2>
+                    <p>On a scale of 1 to 5, rate how much you disagree (1) or agree (5) with the following statements:</p>
                     <form>
                         <div class="form-box">
-                        <input class="form-control" type="text" id="name" placeholder="Name (Required)">
-                    </div>
-                    <div class="form-box">
-                        <input class="form-control" type="text" id="image" placeholder="Link to Photo Image (Required)">
-                    </div>
+                            <input class="form-control" type="text" id="name" placeholder="Name (Required)">
+                        </div>
+                        <div class="form-box">
+                            <input class="form-control" type="text" id="image" placeholder="Link to Photo Image (Required)">
+                        </div>
                         <div class="form-box">
                             <h4 class="questions">Question 1</h4>
                             <div class="form-group">
                                 <label for="q1">Your mind is always buzzing with unexplored ideas and plans.</label>
                                 <select class="form-control" id="q1">
-                                    <option>1 (strongly disagree)</option>
+                                    <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
-                                    <option>5 (strongly agree)</option>
+                                    <option>5</option>
                                 </select>
                             </div>
                         </div>
@@ -157,11 +164,11 @@ select {
                             <div class="form-group">
                                 <label for="q2">Generally speaking, you rely more on your experience than your imagination.</label>
                                 <select class="form-control" id="q2">
-                                    <option>1 (strongly disagree)</option>
+                                    <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
-                                    <option>5 (strongly agree)</option>
+                                    <option>5</option>
                                 </select>
                             </div>
                         </div>
@@ -170,11 +177,11 @@ select {
                             <div class="form-group">
                                 <label for="q3">You find it easy to stay relaxed and focused even when there is some pressure.</label>
                                 <select class="form-control" id="q3">
-                                    <option>1 (strongly disagree)</option>
+                                    <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
-                                    <option>5 (strongly agree)</option>
+                                    <option>5</option>
                                 </select>
                             </div>
                         </div>
@@ -183,11 +190,11 @@ select {
                             <div class="form-group">
                                 <label for="q4">You rarely do something just out of sheer curiosity.</label>
                                 <select class="form-control" id="q4">
-                                    <option>1 (strongly disagree)</option>
+                                    <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
-                                    <option>5 (strongly agree)</option>
+                                    <option>5</option>
                                 </select>
                             </div>
                         </div>
@@ -196,11 +203,11 @@ select {
                             <div class="form-group">
                                 <label for="q5">People can rarely upset you.</label>
                                 <select class="form-control" id="q5">
-                                    <option>1 (strongly disagree)</option>
+                                    <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
-                                    <option>5 (strongly agree)</option>
+                                    <option>5</option>
                                 </select>
                             </div>
                         </div>
@@ -209,11 +216,11 @@ select {
                             <div class="form-group">
                                 <label for="q6">It is often difficult for you to relate to other people’s feelings.</label>
                                 <select class="form-control" id="q6">
-                                    <option>1 (strongly disagree)</option>
+                                    <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
-                                    <option>5 (strongly agree)</option>
+                                    <option>5</option>
                                 </select>
                             </div>
                         </div>
@@ -222,11 +229,11 @@ select {
                             <div class="form-group">
                                 <label for="q7">In a discussion, truth should be more important than people’s sensitivities.</label>
                                 <select class="form-control" id="q7">
-                                    <option>1 (strongly disagree)</option>
+                                    <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
-                                    <option>5 (strongly agree)</option>
+                                    <option>5</option>
                                 </select>
                             </div>
                         </div>
@@ -235,11 +242,11 @@ select {
                             <div class="form-group">
                                 <label for="q8">You rarely get carried away by fantasies and ideas.</label>
                                 <select class="form-control" id="q8">
-                                    <option>1 (strongly disagree)</option>
+                                    <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
-                                    <option>5 (strongly agree)</option>
+                                    <option>5</option>
                                 </select>
                             </div>
                         </div>
@@ -248,11 +255,11 @@ select {
                             <div class="form-group">
                                 <label for="q9">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
                                 <select class="form-control" id="q9">
-                                    <option>1 (strongly disagree)</option>
+                                    <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
-                                    <option>5 (strongly agree)</option>
+                                    <option>5</option>
                                 </select>
                             </div>
                         </div>
@@ -261,11 +268,11 @@ select {
                             <div class="form-group">
                                 <label for="q10">You feel more energetic after spending time with a group of people.</label>
                                 <select class="form-control" id="q10">
-                                    <option>1 (strongly disagree)</option>
+                                    <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
-                                    <option>5 (strongly agree)</option>
+                                    <option>5</option>
                                 </select>
                             </div>
                         </div>
@@ -276,8 +283,8 @@ select {
                 </div>
             </div>
         </div>
-</div>
-<div id="friendModal" class="modal fade" role="dialog">
+    </div>
+    <div id="friendModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -298,59 +305,60 @@ select {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <script type="text/javascript">
-$("#submit").on("click", function(event) {
-    event.preventDefault();
-    //grabbing data from input fields
-    var input = {
-        name: $("#name").val().trim(),
-        image: $("#image").val().trim(),
-        scores: [
-            $("#q1").val().trim(),
-            $("#q2").val().trim(),
-            $("#q3").val().trim(),
-            $("#q4").val().trim(),
-            $("#q5").val().trim(),
-            $("#q6").val().trim(),
-            $("#q7").val().trim(),
-            $("#q8").val().trim(),
-            $("#q9").val().trim(),
-            $("#q10").val().trim(),
-        ]
-    };
-    var valid = validate(input);
-    if (valid) {
-        $.post("/api/friends", input).done(function(data) {
-            $("#modalTitle").text(data.name);
-            $("#modalImg").attr("src", data.photo);
-            $("#friendModal").modal('toggle');
-            //console.log(data);
-        });
-    } else {
-        alert("You forgot something!");
-    }
-});
-function validate(input) {
-    var valid = false;
-    if (input.name === "") {
-        valid = false;
-    }
-    else {
-        valid = true;
-    }
-    if (input.image === "") {
-        valid = false;
-    }
-    else {
-        valid = true;
-    }
-    for (var i = 0; i < input.scores.length; i++) {
-        if (input.scores[i] === "") {
-            valid = false;
+
+    $("#submit").on("click", function(event) {
+        event.preventDefault();
+        //grabbing data from input fields
+        var input = {
+            name: $("#name").val().trim(),
+            image: $("#image").val().trim(),
+            scores: [
+                $("#q1").val().trim(),
+                $("#q2").val().trim(),
+                $("#q3").val().trim(),
+                $("#q4").val().trim(),
+                $("#q5").val().trim(),
+                $("#q6").val().trim(),
+                $("#q7").val().trim(),
+                $("#q8").val().trim(),
+                $("#q9").val().trim(),
+                $("#q10").val().trim(),
+            ]
+        };
+        var valid = validate(input);
+        var currentURL = window.location.origin;
+        if (valid) {
+            $.post(currentURL + "/api/friends", input).done(function(data) {
+                $("#modalTitle").text(data.name);
+                $("#modalImg").attr("src", data.photo);
+                $("#friendModal").modal('toggle');
+                console.log(data);
+            });
+        } else {
+            alert("You forgot something!");
         }
+    });
+
+    function validate(input) {
+        var valid = false;
+        if (input.name === "") {
+            valid = false;
+        } else {
+            valid = true;
+        }
+        if (input.image === "") {
+            valid = false;
+        } else {
+            valid = true;
+        }
+        for (var i = 0; i < input.scores.length; i++) {
+            if (input.scores[i] === "") {
+                valid = false;
+            }
+        }
+        return valid;
     }
-    return valid;
-}
-</script>
+    </script>
 </body>
 
 </html>
